@@ -1,4 +1,9 @@
-import numpy as np
-
-# testing the pep8 bot is working
-test = 1
+# load data
+from nltk.tokenize import word_tokenize
+filename = '/home/fin/DL/DL_NLP/example_text.txt'
+file = open(filename, 'rt')
+text = file.read()
+file.close()
+# split into words
+tokens = word_tokenize(text)
+print(tokens)
